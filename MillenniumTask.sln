@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cards.Domain", "Cards.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cards.Infrastructure", "Cards.Infrastructure\Cards.Infrastructure.csproj", "{5CB24EF7-E831-4279-B5A4-9A6060B24E08}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{97191C44-8D32-459E-B12C-5C4BB4F60CD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cards.Domain.Tests", "Tests\Cards.Domain.Tests\Cards.Domain.Tests.csproj", "{B3DB16FE-1889-4F4C-9DC9-504589CFC58C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,7 +28,12 @@ Global
 		{5CB24EF7-E831-4279-B5A4-9A6060B24E08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CB24EF7-E831-4279-B5A4-9A6060B24E08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CB24EF7-E831-4279-B5A4-9A6060B24E08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3DB16FE-1889-4F4C-9DC9-504589CFC58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3DB16FE-1889-4F4C-9DC9-504589CFC58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3DB16FE-1889-4F4C-9DC9-504589CFC58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3DB16FE-1889-4F4C-9DC9-504589CFC58C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{B3DB16FE-1889-4F4C-9DC9-504589CFC58C} = {97191C44-8D32-459E-B12C-5C4BB4F60CD9}
 	EndGlobalSection
 EndGlobal

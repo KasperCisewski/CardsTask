@@ -1,6 +1,18 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+using Autofac.Extensions.DependencyInjection;
 
-app.Run();
+namespace MillenniumTask;
+
+public class Program
+{
+    public static async Task Main(string[] args)
+    {
+        var host = Host.CreateDefaultBuilder(args)
+            .ConfigureLogging(l=> l.SetMinimumLevel(LogLevel.Trace))
+            .UseServiceProviderFactory(new AutofacServiceProviderFactory())
+            .ConfigureWebHostDefaults(webBuilder => webBuilder.UseStartup<Startup>())
+            .Build();
+        
+        await host.RunAsync();
+    }
+}
